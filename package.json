@@ -9,7 +9,7 @@
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "homepage": "https://forappdevelopmentuse.github.io/githubsampledeploy",
+  "homepage": "https://ForAppDeveloper.github.io/GithubDeploySample",
   "dependencies": {
     "gh-pages": "^2.0.1"
   }
