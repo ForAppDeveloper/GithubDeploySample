@@ -52,7 +52,7 @@ function listenSubmitOnclick(){
 }
 
 function getLoginStorageItem(value){
-    sessionStorage.getItem(value);
+   return sessionStorage.getItem(value);
 }
 
 // << Register >>
