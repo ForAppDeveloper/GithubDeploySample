@@ -80,3 +80,4 @@ function alertSSLError(){
 
 function setSessionItem(value,itemValue){
     sessionStorage.setItem(value, itemValue);
+}
