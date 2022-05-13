@@ -77,3 +77,6 @@ function getRegisterStorageItem(value){
 function alertSSLError(){
     alert('An SSL error has occured and a secure connection to the server cannot be made.');
 }
+
+function setSessionItem(value,itemValue){
+    sessionStorage.setItem(value, itemValue);
