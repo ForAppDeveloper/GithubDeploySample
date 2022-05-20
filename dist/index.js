@@ -77,3 +77,7 @@ function setSessionItem(value,itemValue){
 function logger(value){
     console.log("this is a log >> ",value);
 }
+
+function getItem(value){
+    return value;
+}
