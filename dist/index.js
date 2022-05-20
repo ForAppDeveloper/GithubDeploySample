@@ -73,3 +73,7 @@ function alertSSLError(){
 function setSessionItem(value,itemValue){
     sessionStorage.setItem(value, itemValue);
 }
+
+function logger(value){
+    console.log("this is a log >> ",value);
+}
