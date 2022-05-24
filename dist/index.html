@@ -10,8 +10,9 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src 'self' gap: ; style-src 'self'; img-src 'self' ; media-src 'self'; connect-src 'self' ; object-src 'self' ; frame-ancestors 'self' ; font-src 'self' data: https://fonts.gstatic.com https://*.gstatic.com; frame-src 'self' gap: gap-iab:;">
   <link rel="stylesheet" href="main.css">
+  <script src="jquery-3.6.0.min.js"></script>
   <script src="index.js"></script>
-
+  <script src="login.js"></script>
 </head>
 
 <body>
@@ -53,7 +54,7 @@
 
         <div class="Stage">
 
-          <form id="login" name="valForm" onsubmit="return false;" action="/eai/login" method="post"
+          <form id="login" name="valForm" onsubmit="return false;" 
             novalidate="novalidate" autocomplete="off">
             <div class='content-page'>
               <div class='header-wrapper'>
