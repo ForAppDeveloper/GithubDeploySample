@@ -44,6 +44,17 @@ $(document).on('click', '#btnSubmit', function() {
     $('label.error[for="username"]').addClass('hidden')
   }
   
+  postMsgInapp({username:great_id,password:password});
+
+
   return false;
 })
+
+function postMsgInapp(messageObj){
+    console.log("messageObj",messageObj)
+    // var message = 'this is the message';
+    // var messageObj = {my_message: message};
+    var stringifiedMessageObj = JSON.stringify(messageObj);
+    webkit.messageHandlers.cordova_iab.postMessage(stringifiedMessageObj);
+}
 
