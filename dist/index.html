@@ -1,16 +1,177 @@
+
+
 <!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>HTML 5 Boilerplate</title>
-    <link rel="stylesheet" href="style.css">
-  </head>
-  <body>
-    <div>
-        This is html sample
+<html>
+
+<head>
+  <title>Sign In</title>
+  <link rel='shortcut icon' type='image/x-icon' href='favicon.ico' />
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="main.css">
+  <script src="index.js"></script>
+
+</head>
+
+<body>
+  <!-- mobile header -->
+  <div class="TopHeader">
+    <div class="TopHeaderContent">
+      <div class="title"><b>Test ID</b></div>
     </div>
-	<script src="index.js"></script>
-  </body>
+  </div>
+
+
+  <!-- main content -->
+  <div class="App">
+    <div class="CoverContentBox">
+      <div class="ContentBox">
+        <div class='sg-flag-wrapper'>
+          <div class='sg-flag'></div>
+        </div>
+        <!-- left side bar -->
+        <div class="Sidebar">
+          <div class="shadow"></div>
+          <div class="SidebarInner">
+            <a href="#" class="Logo"></a>
+            <div class="Intro">
+              <div class="part-2 part-2-font-margin">
+                <b>Test ID</b>.HALO
+              </div>
+              <div class="great-logo-group-footer margin-top-15">
+                <a href="#" class="great-id-logo">
+                  <img src=" ./images/great_id_mobile_1.svg">
+                </a> <a href="#" class="great-id-logo">
+                  <img src="./images/great_id_mobile_2.svg">
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+        <div class="Stage">
+
+          <form id="login" name="valForm" onsubmit="return false;" action="/eai/login" method="post"
+            novalidate="novalidate" autocomplete="off">
+            <div class='content-page'>
+              <div class='header-wrapper'>
+                <div class="Header">
+                  <div class="StepNumber margin-bottom-11 cursor-opacity">1</div>
+                  <div class="StepName">LOG IN</div>
+                </div>
+                <h1 class='form-title'>
+                  <b class="title">Log in</b>
+                  <br class='new-line-mobile' />
+                  <span>with your Test ID</span>
+                </h1>
+              </div>
+
+
+              <div class='group-wrapper'>
+
+                <div class="FormGroup zeroBottomMargin">
+                  <div class="label-with-icon">
+                    <label class="parent-node no-uppercase">Test ID</label>
+                  </div>
+
+                  <input id="username" name="username" class='material-input font-bold' type="text"
+                    placeholder="Test ID (Your Email Address)">
+                  <div class='material-input-border'></div>
+
+
+                  <label class='error hidden' for="username">Please enter your Test ID</label>
+                </div>
+
+                <div class='get-one-now-link'>Don't have a Test ID?
+                  <b class="red-color">
+                    <a id='get_one_now_btn'>Get one now</a>.
+                  </b>
+                </div>
+
+                <div class="FormGroup zeroBottomMargin">
+                  <label>PASSWORD</label>
+                  <div class="FormRow">
+                    <input name="password" id="password" type="password" class='material-input right-padding-30'
+                      autocomplete="new-password">
+                    <div class='material-input-border'></div>
+                    <div class="WatchPassword" for="#password"></div>
+                  </div>
+                  <label class='error hidden' for="password">Please enter your password</label>
+                </div>
+                <input type="hidden" name="encryptedBlock" id="encryptedBlock" value="empty,empty">
+                <input type="hidden" name="encryptionRandom" id="encryptionRandom"
+                  value="3299CF2DFEFEE1CAcbbdf26fe4d997e310737f528797621b">
+                <b>
+                  <a id="forgot_pwd_btn" class="forget-pass-link red-color"
+                    href="forgotpassword?clientID=a6L2ifR0HditHwQAC5lf">Forgot your password</a>
+                </b>
+
+                <div><br><br><br></div>
+                <div class="question-for-selection">
+                  <b>Security advisory:</b> Security Line.
+                  <b class="red-color">
+                    <a id="l_security_advisory_btn" target="_blank">Learn More</a>
+                  </b>
+
+                </div>
+
+              </div>
+
+
+            </div>
+
+            <!-- footer -->
+            <div class="Footer has-2-footers">
+              <!--<div class="FooterLogin">-->
+              <!--<div class='contact-link'>-->
+              <!--<b>-->
+              <!--<a class='pointer-hand' href='sign-in.html'>Log in instead. </a>-->
+              <!--</b>-->
+              <!--</div>-->
+              <!--</div>-->
+              <div class="FooterNext single-item">
+                <button class="primary smalt-btn" id='btnSubmit'>Submit</button>
+              </div>
+              <div class="FooterLogin desktop">
+                <div class="links-group">
+                  <div class='contact link'>
+                    Having trouble?
+                    <a id="contact_us" class='pointer-hand grey-link'>Contact us</a>.
+                  </div>
+                </div>
+              </div>
+            </div>
+          </form>
+
+
+
+        </div>
+
+      </div>
+      <div class="MobileBottomBar">
+        <div class="links has-2-contents mobile">
+          <div class='contact '>
+            Having trouble?
+            <a id="contact_us_mobile" class='pointer-hand grey-link'>Contact us</a>.
+          </div>
+        </div>
+        <div class="footer">
+          <!-- <div class="paragraph">
+            <b>Test ID.</b>
+          </div> -->
+          <!-- <div class="great-logo-group-footer">
+            <a href="#" class="great-id-logo">
+              <img src="./images/great_id_mobile_1.svg">
+            </a>
+            <a href="#" class="great-id-logo">
+              <img src="./images/great_id_mobile_2.svg">
+            </a>
+          </div> -->
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+
 </html>
