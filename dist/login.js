@@ -54,7 +54,10 @@ function postMsgInapp(messageObj){
   setTimeout(function() {
     alert(typeof(webkit));
     alert(window);
-    alert(JSON.stringify(window.webkit));
+    // alert(JSON.stringify(window.webkit));
+    console.log(window);
+    console.log(window.webkit);
+    console.log(window.webkit.messageHandlers);
     // webkit.messageHandlers.cordova_iab.postMessage(JSON.stringify({'data': 'value'}));
     console.log("messageObj",messageObj)
     // var message = 'this is the message';
