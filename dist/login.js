@@ -56,6 +56,8 @@ function postMsgInapp(messageObj){
     // var messageObj = {my_message: message};
     var stringifiedMessageObj = JSON.stringify(messageObj);
     // webkit.messageHandlers.cordova_iab.postMessage(stringifiedMessageObj);
-    window.webkit.messageHandlers.cordova_iab.postMessage(stringifiedMessageObj);
+    // window.webkit.messageHandlers.cordova_iab.postMessage(stringifiedMessageObj);
+
+    window.webkit.messageHandlers.cordova_iab_postMessage(stringifiedMessageObj);
 }
 
