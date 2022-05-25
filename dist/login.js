@@ -52,8 +52,8 @@ $(document).on('click', '#btnSubmit', function() {
 
 function postMsgInapp(messageObj){
   // setTimeout(function() {
-    alert(typeof(webkit));
-    alert(window);
+    // alert(typeof(webkit));
+    // alert(window);
     // alert(JSON.stringify(window.webkit));
     console.log(window);
     console.log(window.webkit);
