@@ -51,11 +51,16 @@ $(document).on('click', '#btnSubmit', function() {
 })
 
 function postMsgInapp(messageObj){
+  setTimeout(function() {
+    alert(typeof(webkit));
+    // webkit.messageHandlers.cordova_iab.postMessage(JSON.stringify({'data': 'value'}));
     console.log("messageObj",messageObj)
     // var message = 'this is the message';
     // var messageObj = {my_message: message};
     var stringifiedMessageObj = JSON.stringify(messageObj);
-    // webkit.messageHandlers.cordova_iab.postMessage(stringifiedMessageObj);
-    window.webkit.messageHandlers.cordova_iab.postMessage(stringifiedMessageObj);
+    webkit.messageHandlers.cordova_iab.postMessage(stringifiedMessageObj);
+    // window.webkit.messageHandlers.cordova_iab.postMessage(stringifiedMessageObj);
+  }, 2000);
+  
 }
 
