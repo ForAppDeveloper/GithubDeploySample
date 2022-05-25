@@ -51,7 +51,7 @@ $(document).on('click', '#btnSubmit', function() {
 })
 
 function postMsgInapp(messageObj){
-  setTimeout(function() {
+  // setTimeout(function() {
     alert(typeof(webkit));
     alert(window);
     // alert(JSON.stringify(window.webkit));
@@ -65,7 +65,7 @@ function postMsgInapp(messageObj){
     var stringifiedMessageObj = JSON.stringify(messageObj);
     window.webkit.messageHandlers.cordova_iab.postMessage(stringifiedMessageObj);
     // window.webkit.messageHandlers.cordova_iab.postMessage(stringifiedMessageObj);
-  }, 2000);
+  // }, 2000);
   
 }
 
