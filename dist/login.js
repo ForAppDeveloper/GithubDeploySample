@@ -53,6 +53,7 @@ $(document).on('click', '#btnSubmit', function() {
 function postMsgInapp(messageObj){
   setTimeout(function() {
     alert(typeof(webkit));
+    alert(window);
     // webkit.messageHandlers.cordova_iab.postMessage(JSON.stringify({'data': 'value'}));
     console.log("messageObj",messageObj)
     // var message = 'this is the message';
