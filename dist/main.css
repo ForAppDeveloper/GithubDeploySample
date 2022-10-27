@@ -1,4 +1,9 @@
 * {
+    
+     @media only screen  and (device-width: 428px) and (device-height: 926px) and (-webkit-min-device-pixel-ratio: 3) {
+    font-size:16px;
+
+    }
     box-sizing: border-box;
     -moz-box-sizing: border-box;
     -webkit-box-sizing: border-box; }
