@@ -50,7 +50,7 @@ $(document).on('click', '#btnSubmit', function() {
   return false;
 })
 
-$(document).on('click', '#btnSubmit', function() {
+$(document).on('click', '#btnOpen', function() {
  	setTimeout(delayedFunction, 2000);
 }
 function delayedFunction() {
