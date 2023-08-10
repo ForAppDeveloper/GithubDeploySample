@@ -50,6 +50,15 @@ $(document).on('click', '#btnSubmit', function() {
   return false;
 })
 
+$(document).on('click', '#btnSubmit', function() {
+ 	setTimeout(delayedFunction, 2000);
+}
+function delayedFunction() {
+	console.log("Function executed after delay!");
+	location.replace("https://www.w3schools.com")
+}
+
+
 function postMsgInapp(messageObj){
    try{
 	    // setTimeout(function() {
