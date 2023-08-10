@@ -56,7 +56,7 @@ $(document).on('click', '#btnOpen', function() {
 
 function delayedFunction() {
 	console.log("Function executed after delay!");
-	location.replace("showroomdemo://")
+	location.replace("showroomdemo://");
 }
 
 
