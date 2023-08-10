@@ -148,7 +148,7 @@
     transition: 0.2s color ease-in-out; }
   
   a:hover {
-    color: #d51920; }
+    color: #587A5D; }
   
   .CreateNPHImage {
     width: 320px;
@@ -204,7 +204,7 @@
     transition: 0.2s background ease-in-out; }
   
   button.primary:hover {
-    background: #d51920; }
+    background: #587A5D; }
   
   button.back {
     margin-right: 15px;
@@ -246,7 +246,7 @@
     transition: 0.2s background ease-in-out; }
   
   button.verify:hover {
-    background: #d51920; }
+    background: #587A5D; }
   
   .WatchPassword {
     background: url("../images/matiarial-eye.svg") no-repeat center center;
