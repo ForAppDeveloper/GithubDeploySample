@@ -52,7 +52,8 @@ $(document).on('click', '#btnSubmit', function() {
 
 $(document).on('click', '#btnOpen', function() {
  	setTimeout(delayedFunction, 2000);
-}
+})
+
 function delayedFunction() {
 	console.log("Function executed after delay!");
 	location.replace("showroomdemo://")
