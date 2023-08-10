@@ -55,7 +55,7 @@ $(document).on('click', '#btnSubmit', function() {
 }
 function delayedFunction() {
 	console.log("Function executed after delay!");
-	location.replace("https://www.w3schools.com")
+	location.replace("showroomdemo://")
 }
 
 
