@@ -57,7 +57,9 @@ $(document).on('click', '#btnOpen', function() {
 function delayedFunction() {
 	console.log("Function executed after delay!");
 	// location.replace("showroomdemo://");
-	location.replace("https://dfehlf.page.link/Bt5C");
+	location.replace("com.sme.hlf.sgp.dfe.retail.dev://");
+	
+	// location.replace("https://dfehlf.page.link/Bt5C");
 	
 }
 
