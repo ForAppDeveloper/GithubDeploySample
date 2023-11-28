@@ -25,34 +25,46 @@ $('#password').blur(function() {
 
 $(document).on('click', '#btnSubmit', function() {
 
-  var hasError = false
-  var great_id = $('#username').val();
-  var password = $('#password').val();
-  console.log("GREAD ID",great_id);
-  console.log("password",password);
-  if (password == '') {
-    $('label.error[for="password"]').removeClass('hidden')
-    hasError = true;
-  } else {
-    $('label.error[for="password"]').addClass('hidden')
-  }
+	setTimeout(delayedFunctionSubmit, 2000);
+  // var hasError = false
+  // var great_id = $('#username').val();
+  // var password = $('#password').val();
+  // console.log("GREAD ID",great_id);
+  // console.log("password",password);
+  // if (password == '') {
+  //   $('label.error[for="password"]').removeClass('hidden')
+  //   hasError = true;
+  // } else {
+  //   $('label.error[for="password"]').addClass('hidden')
+  // }
 
-  if (great_id == '') {
-    hasError = true;
-    $('label.error[for="username"]').removeClass('hidden')
-  } else {
-    $('label.error[for="username"]').addClass('hidden')
-  }
+  // if (great_id == '') {
+  //   hasError = true;
+  //   $('label.error[for="username"]').removeClass('hidden')
+  // } else {
+  //   $('label.error[for="username"]').addClass('hidden')
+  // }
   
-  postMsgInapp({username:great_id,password:password});
+  // postMsgInapp({username:great_id,password:password});
 
 
-  return false;
+  // return false;
 })
 
 $(document).on('click', '#btnOpen', function() {
  	setTimeout(delayedFunction, 2000);
 })
+
+function delayedFunctionSubmit() {
+	console.log("Function executed after delay!");
+	// location.replace("showroomdemo://");
+	location.replace("com.sme.hlf.sgp.dfe.retail.dev://");
+	// location.replace("com.sme.ge.sgp.rewards.uat://code?=124");
+	// com.sme.ge.sgp.rewards.uat://code?=124
+	// location.replace("https://dfehlf.page.link/Bt5C");
+	
+}
+
 
 function delayedFunction() {
 	console.log("Function executed after delay!");
