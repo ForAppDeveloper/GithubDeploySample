@@ -72,8 +72,8 @@ function delayedFunction() {
 	console.log("Function executed after delay!");
 	// location.replace("showroomdemo://");
 	// location.replace("com.sme.hlf.sgp.dfe.retail.dev://");
-	// location.replace("com.sme.ge.sgp.rewards.uat://ijij?code=124");
-	location.replace("https://dev.silverlakemobility.com/my/cc_ereward_ws/api/general/loginSSOv2?code=123&yes=567");
+	location.replace("com.sme.ge.sgp.rewards.uat://ijij?code=124");
+	// location.replace("https://dev.silverlakemobility.com/my/cc_ereward_ws/api/general/loginSSOv2?code=123&yes=567");
 	// com.sme.ge.sgp.rewards.uat://code?=124
 	// location.replace("https://dfehlf.page.link/Bt5C");
 	
