@@ -1,7 +1,7 @@
 
-function checkTxtEmailExist(){
-    try{ txtEmail }catch(e){console.log(e);}
-}
+// function checkTxtEmailExist(){
+//     try{ txtEmail }catch(e){console.log(e);}
+// }
 
 function checkUsernameExist(){
     try{ username }catch(e){console.log(e);}
